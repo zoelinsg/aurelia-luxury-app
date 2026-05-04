@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concierge | AURELIA</title>
+    <meta name="description" content="Contact the AURELIA concierge team for personalized assistance.">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header id="main-header" class="scrolled">
+        <div class="logo"><a href="/">AURELIA</a></div>
+        <nav>
+            <ul>
+                <li><a href="/">Collection</a></li>
+                <li><a href="/about">Maison</a></li>
+                <li><a href="/contact" class="active">Concierge</a></li>
+            </ul>
+        </nav>
+        <div class="cart-icon" id="cart-icon">
+            <span>Cart</span>
+            <span id="cart-count">(0)</span>
+        </div>
+    </header>
+
+    <!-- Slide-out Cart Drawer -->
+    <div class="cart-drawer" id="cart-drawer">
+        <div class="cart-header">
+            <h3>Your Selection</h3>
+            <span class="close-cart" id="close-cart">&times;</span>
+        </div>
+        <div class="cart-items" id="drawer-items"></div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total</span>
+                <span id="drawer-total">$0.00</span>
+            </div>
+            <a href="/checkout" class="btn btn-primary btn-checkout">Proceed to Checkout</a>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <section class="page-header">
+            <h1>Private Concierge</h1>
+            <p>Allow our dedicated team to assist with styling advice, bespoke requests, or order inquiries.</p>
+        </section>
+
+        <section class="container" style="padding-top: 0; max-width: 800px;">
+            <div class="product-card fade-in">
+                <form id="contact-form" style="padding: 2rem;">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your Inquiry</label>
+                        <textarea id="message" rows="4" required></textarea>
+                    </div>
+                    <div class="text-center mt-4">
+                        <button type="submit" class="btn btn-primary" style="width: 100%; max-width: 300px;">Submit Request</button>
+                    </div>
+                    <p id="form-status" style="margin-top: 2rem; text-align: center; font-size: 0.9rem; letter-spacing: 0.05em;"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Floating Chat Widget -->
+    <div class="chat-widget">
+        <button class="chat-btn" id="chat-btn">A</button>
+        <div class="chat-popup" id="chat-popup">
+            <div class="chat-header">
+                <h4>AURELIA Concierge</h4>
+                <span class="close-chat" id="close-chat">&times;</span>
+            </div>
+            <div class="chat-messages" id="chat-messages">
+                <div class="msg msg-bot">Welcome to AURELIA. How may we assist you with your luxury wardrobe today?</div>
+            </div>
+            <div class="chat-input-area">
+                <input type="text" id="chat-input" placeholder="Ask about materials...">
+                <button id="chat-send">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>

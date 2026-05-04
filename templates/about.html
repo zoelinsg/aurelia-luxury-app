@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maison | AURELIA</title>
+    <meta name="description" content="Discover the story and heritage behind AURELIA luxury fashion.">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header id="main-header" class="scrolled"> <!-- Force scrolled state for inner pages if needed, or JS will handle -->
+        <div class="logo"><a href="/">AURELIA</a></div>
+        <nav>
+            <ul>
+                <li><a href="/">Collection</a></li>
+                <li><a href="/about" class="active">Maison</a></li>
+                <li><a href="/contact">Concierge</a></li>
+            </ul>
+        </nav>
+        <div class="cart-icon" id="cart-icon">
+            <span>Cart</span>
+            <span id="cart-count">(0)</span>
+        </div>
+    </header>
+
+    <!-- Slide-out Cart Drawer -->
+    <div class="cart-drawer" id="cart-drawer">
+        <div class="cart-header">
+            <h3>Your Selection</h3>
+            <span class="close-cart" id="close-cart">&times;</span>
+        </div>
+        <div class="cart-items" id="drawer-items"></div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total</span>
+                <span id="drawer-total">$0.00</span>
+            </div>
+            <a href="/checkout" class="btn btn-primary btn-checkout">Proceed to Checkout</a>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <section class="page-header">
+            <h1>The Maison</h1>
+            <p>Founded on the principles of uncompromising quality and architectural silhouette.</p>
+        </section>
+
+        <section class="container" style="padding-top: 0;">
+            <div class="editorial-grid">
+                <div class="editorial-image product-card fade-in">
+                    <!-- Placeholder using a classy URL -->
+                    <div class="product-image-container" style="aspect-ratio: 4/5;">
+                        <img src="/static/images/about1.jpg" alt="Our Heritage" class="product-image">
+                    </div>
+                </div>
+                <div class="editorial-text product-card fade-in" style="transition-delay: 0.2s;">
+                    <h2>Our Heritage</h2>
+                    <p>AURELIA was born from a desire to strip away the superfluous and focus on the essence of form. Every piece is a study in precision, utilizing only the most exceptional materials sourced from historic mills across Italy and France.</p>
+                    <p>We believe that true luxury is quiet, confident, and meticulously crafted. Our collections are designed not for a single season, but to be foundational elements of a considered wardrobe.</p>
+                </div>
+            </div>
+
+            <div class="editorial-grid reverse mt-4">
+                <div class="editorial-image product-card fade-in">
+                    <div class="product-image-container" style="aspect-ratio: 4/5;">
+                        <img src="/static/images/about2.jpg" alt="The Atelier" class="product-image">
+                    </div>
+                </div>
+                <div class="editorial-text product-card fade-in" style="transition-delay: 0.2s;">
+                    <h2>The Atelier</h2>
+                    <p>Our master artisans dedicate countless hours to hand-finishing garments. From the perfect drape of our Obsidian Silk Trench to the microscopic detailing on our hardware, true luxury lies in what is felt, not just seen.</p>
+                    <p>In our Parisian atelier, traditional techniques converge with modern innovation to create pieces that transcend the ordinary.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Floating Chat Widget (Consistent across pages) -->
+    <div class="chat-widget">
+        <button class="chat-btn" id="chat-btn">A</button>
+        <div class="chat-popup" id="chat-popup">
+            <div class="chat-header">
+                <h4>AURELIA Concierge</h4>
+                <span class="close-chat" id="close-chat">&times;</span>
+            </div>
+            <div class="chat-messages" id="chat-messages">
+                <div class="msg msg-bot">Welcome to AURELIA. How may we assist you with your luxury wardrobe today?</div>
+            </div>
+            <div class="chat-input-area">
+                <input type="text" id="chat-input" placeholder="Ask about materials...">
+                <button id="chat-send">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>

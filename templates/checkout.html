@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout | AURELIA</title>
+    <meta name="description" content="Complete your purchase securely.">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header id="main-header" class="scrolled">
+        <div class="logo"><a href="/">AURELIA</a></div>
+        <nav>
+            <ul>
+                <li><a href="/">Collection</a></li>
+                <li><a href="/about">Maison</a></li>
+                <li><a href="/contact">Concierge</a></li>
+            </ul>
+        </nav>
+        <!-- No cart icon on checkout page to maintain a focused experience -->
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="page-header" style="padding-bottom: 2rem;">
+            <h1>Finalize Selection</h1>
+        </section>
+
+        <section class="container" style="padding-top: 0; max-width: 1200px;">
+            <div class="checkout-container">
+                
+                <!-- Order Summary -->
+                <div class="checkout-section fade-in">
+                    <h3>Order Summary</h3>
+                    <div id="checkout-items" style="margin-bottom: 2rem;">
+                        <!-- Items injected by JS -->
+                    </div>
+                    
+                    <div style="padding-top: 1.5rem; border-top: 1px solid var(--glass-border); display: flex; justify-content: space-between; align-items: center;">
+                        <span style="font-family: var(--font-sans); text-transform: uppercase; letter-spacing: 0.1em; color: #e0e0e0; font-size: 0.85rem;">Total Due</span>
+                        <span id="checkout-total" style="font-family: var(--font-serif); font-size: 1.5rem; color: var(--champagne-gold);">$0.00</span>
+                    </div>
+                </div>
+
+                <!-- Payment Form -->
+                <div class="checkout-section fade-in" style="transition-delay: 0.2s;">
+                    <h3>Payment Details</h3>
+                    <form id="payment-form" onsubmit="event.preventDefault();" style="background: var(--obsidian-light); padding: 2.5rem; border: 1px solid var(--glass-border);">
+                        <div class="form-group">
+                            <label for="cardName">Name on Card</label>
+                            <input type="text" id="cardName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="cardNumber">Card Number</label>
+                            <input type="text" id="cardNumber" required>
+                        </div>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+                            <div class="form-group">
+                                <label for="cardExpiry">Expiry (MM/YY)</label>
+                                <input type="text" id="cardExpiry" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="cardCvv">Security Code</label>
+                                <input type="text" id="cardCvv" required>
+                            </div>
+                        </div>
+                        <div class="text-center mt-4">
+                            <button id="checkout-btn" type="button" class="btn btn-primary" style="width: 100%;">Authorize Payment</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AURELIA | Luxury Fashion</title>
+    <meta name="description" content="Discover the latest collection of luxury fashion and accessories at AURELIA.">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header id="main-header">
+        <div class="logo"><a href="/">AURELIA</a></div>
+        <nav>
+            <ul>
+                <li><a href="/" class="active">Collection</a></li>
+                <li><a href="/about">Maison</a></li>
+                <li><a href="/contact">Concierge</a></li>
+            </ul>
+        </nav>
+        <div class="cart-icon" id="cart-icon">
+            <span>Cart</span>
+            <span id="cart-count">(0)</span>
+        </div>
+    </header>
+
+    <!-- Slide-out Cart Drawer -->
+    <div class="cart-drawer" id="cart-drawer">
+        <div class="cart-header">
+            <h3>Your Selection</h3>
+            <span class="close-cart" id="close-cart">&times;</span>
+        </div>
+        <div class="cart-items" id="drawer-items">
+            <!-- Items injected by JS -->
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total</span>
+                <span id="drawer-total">$0.00</span>
+            </div>
+            <a href="/checkout" class="btn btn-primary btn-checkout">Proceed to Checkout</a>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <span class="hero-subtitle">The Fall/Winter Campaign</span>
+                <h1>The Obsidian Collection</h1>
+                <p>Embrace the shadows with our new line of timeless, minimalist luxury pieces crafted for the modern visionary. Experience architectural silhouettes and uncompromising quality.</p>
+                <a href="#collection" class="btn btn-outline">Discover the Collection</a>
+            </div>
+        </section>
+
+        <section class="container" id="collection">
+            <div class="text-center mb-4">
+                <h2 style="font-size: 2.5rem; color: var(--champagne-gold);">Curated Selection</h2>
+            </div>
+            <div class="products-grid" id="products-container">
+                <!-- Products injected by JS -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Floating Chat Widget -->
+    <div class="chat-widget">
+        <button class="chat-btn" id="chat-btn">A</button>
+        <div class="chat-popup" id="chat-popup">
+            <div class="chat-header">
+                <h4>AURELIA Concierge</h4>
+                <span class="close-chat" id="close-chat">&times;</span>
+            </div>
+            <div class="chat-messages" id="chat-messages">
+                <div class="msg msg-bot">Welcome to AURELIA. How may we assist you with your luxury wardrobe today?</div>
+            </div>
+            <div class="chat-input-area">
+                <input type="text" id="chat-input" placeholder="Ask about materials...">
+                <button id="chat-send">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
