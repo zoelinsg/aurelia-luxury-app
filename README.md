@@ -4,8 +4,6 @@ A luxury fashion multi-page web application featuring a premium editorial-inspir
 
 *Built during the Google Build with AI workshop using Antigravity.*
 
-[![Live Demo](https://img.shields.io/badge/Demo-Live_on_Cloud_Run-blue?style=for-the-badge)](https://aurelia-luxury-app-682146797685.asia-east1.run.app)
-
 ## 1. Project Overview
 AURELIA is designed as a minimal viable product (MVP) for a high-end luxury fashion house. It combines modern, sleek visual aesthetics with a fast, lightweight backend architecture. The application is containerized and deployed on Google Cloud Run.
 
@@ -81,21 +79,15 @@ This project is configured for deployment to Google Cloud Run using the included
 ## 7. Live Demo
 View the live application here: **[Live Demo](https://aurelia-luxury-app-682146797685.asia-east1.run.app)**
 
-## 8. Screenshots
-*(Replace these placeholders with actual screenshots of your deployed app)*
-
-| The Collection | The Maison |
-| :---: | :---: |
-| ![Homepage Screenshot](https://placehold.co/600x400/1a1a1a/c5a059?text=Homepage+Screenshot) | ![About Page Screenshot](https://placehold.co/600x400/1a1a1a/c5a059?text=About+Page+Screenshot) |
-
-| Cart Drawer | Concierge Chat |
-| :---: | :---: |
-| ![Cart Screenshot](https://placehold.co/600x400/1a1a1a/c5a059?text=Cart+Screenshot) | ![Chat Screenshot](https://placehold.co/600x400/1a1a1a/c5a059?text=Chat+Screenshot) |
-
-## 9. What I Learned
+## 8. What I Learned
 During this project and the Google Build with AI workshop, I focused on:
 - Architecting a lightweight FastAPI backend to serve HTML templates and JSON APIs simultaneously.
 - Managing client-side state using Vanilla JavaScript and `localStorage` without relying on heavy frameworks.
 - Translating high-end editorial design principles into CSS using modern grid layouts, CSS variables, and intersection observers for scroll animations.
 - Containerizing a Python web application using Docker.
 - Troubleshooting and successfully deploying applications to Google Cloud Run.
+
+## 9. Demo
+[▶ Watch Demo on YouTube](https://youtu.be/HjNA6Keu0JU)
+[![Demo Video](https://img.youtube.com/vi/HjNA6Keu0JU/0.jpg)](https://youtu.be/HjNA6Keu0JU)
+
