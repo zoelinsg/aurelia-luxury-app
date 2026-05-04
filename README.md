@@ -89,5 +89,6 @@ During this project and the Google Build with AI workshop, I focused on:
 
 ## 9. Demo
 [▶ Watch Demo on YouTube](https://youtu.be/HjNA6Keu0JU)
+
 [![Demo Video](https://img.youtube.com/vi/HjNA6Keu0JU/0.jpg)](https://youtu.be/HjNA6Keu0JU)
 
